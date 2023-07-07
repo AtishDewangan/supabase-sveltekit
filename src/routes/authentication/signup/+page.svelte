@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Input from '$lib/component/form/input.svelte';
 	import Button from '$lib/component/form/button.svelte';
+	import Nav from '$lib/component/authentication/nav.svelte';
 	import { applyAction, enhance } from '$app/forms';
 	import { goto, invalidateAll } from '$app/navigation';
 	import toast, { Toaster } from 'svelte-french-toast';
@@ -63,21 +64,21 @@
 				errors={form?.errors?.cpassword}
 			/>
 		</div>
-		<div class="mt-2 text-start text-white">
+		<!-- <div class="mt-2 text-white text-start">
 			<span class="text-base font-medium text-indigo-900">Have you forgot password?</span>
 			<a
 				href="/authentication/forgot-password"
 				type="button"
 				class="underline hover:text-indigo-900">Forgot password</a
 			>
-		</div>
-		<div class="mt-2 text-start">
-			<span class="text-base font-medium text-indigo-900">Have an account?</span>
-			<a
-				href="/authentication/signin"
-				class="cursor-pointer text-white underline hover:text-indigo-900">Sign In</a
-			>
-		</div>
+		</div> -->
+		<Nav
+			heading="Have you forgot password?"
+			route="/authentication/forgot-password"
+			title="Forgot password"
+		/>
+		<Nav heading="Have an account?" route="/authentication/signin" title="Sign In" />
+
 		<div class="">
 			<Button label="Sign Up" htmlType="submit" className="bg-indigo-500 text-green-400 w-full" />
 		</div>

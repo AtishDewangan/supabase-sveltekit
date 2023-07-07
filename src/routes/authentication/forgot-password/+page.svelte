@@ -4,6 +4,7 @@
 	import { applyAction, enhance } from '$app/forms';
 	import { goto, invalidateAll } from '$app/navigation';
 	import toast, { Toaster } from 'svelte-french-toast';
+	import Nav from '$lib/component/authentication/nav.svelte';
 
 	export let form;
 	$: if (!form?.success && form?.message) {
@@ -43,20 +44,9 @@
 				errors={form?.errors?.email}
 			/>
 		</div>
-		<div class="mt-2 text-start">
-			<span class="text-base font-medium text-indigo-900"> Don't have an account?</span>
-			<a
-				href="/authentication/signup"
-				class="cursor-pointer text-white underline hover:text-indigo-900">Sign Up</a
-			>
-		</div>
-		<div class="mt-2 text-start">
-			<span class="text-base font-medium text-indigo-900">Have an account?</span>
-			<a
-				href="/authentication/signin"
-				class="cursor-pointer text-white underline hover:text-indigo-900">Sign In</a
-			>
-		</div>
+
+		<Nav heading="Don't have an account?" route="/authentication/signup" title="Sign Up" />
+		<Nav heading="Have an account?" route="/authentication/signin" title="Sign In" />
 		<div class="">
 			<Button label="Submit" htmlType="submit" className="bg-indigo-500 text-green-400 w-full" />
 		</div>
