@@ -17,7 +17,6 @@
 	const alertFunc = () => {
 		goto('/authentication/reset-password');
 	};
-	console.log('a');
 </script>
 
 <Toaster />
