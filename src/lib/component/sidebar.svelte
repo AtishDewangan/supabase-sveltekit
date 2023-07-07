@@ -60,7 +60,7 @@
 			<ul class="mx-2">
 				<li class={`my-6 flex items-center rounded-sm p-1`}>
 					<a
-						href="/"
+						href="/dashboard"
 						class={`flex items-center p-2 hover:rounded-full hover:bg-indigo-900 hover:text-white ${
 							$page.url.pathname === `/` ? 'rounded-full bg-indigo-900 p-2 text-white' : ''
 						}`}
@@ -76,7 +76,7 @@
 				</li>
 				<li class={`my-6 flex items-center rounded-sm p-1`}>
 					<a
-						href="/customer"
+						href="/dashboard/customer"
 						class={`flex items-center p-2 hover:rounded-full hover:bg-indigo-900 hover:text-white ${
 							$page.url.pathname === `/customer` ? 'rounded-full bg-indigo-900 p-2 text-white' : ''
 						}`}
@@ -135,7 +135,7 @@
 			</li>
 			<li class={`my-6 mt-10 flex items-center rounded-sm p-1`}>
 				<a
-					href="/"
+					href="/dashboard"
 					class={`flex items-center p-2 hover:rounded-full hover:bg-indigo-900  hover:text-white ${
 						$page.url.pathname === `/` ? 'rounded-full bg-indigo-900 p-2 text-white' : ``
 					}`}
@@ -151,7 +151,7 @@
 			</li>
 			<li class={`my-6 flex items-center rounded-sm p-1`}>
 				<a
-					href="/customer"
+					href="/dashboard/customer"
 					class={`flex items-center p-2 hover:rounded-full hover:bg-indigo-900 hover:text-white ${
 						$page.url.pathname === `/customer` ? 'rounded-full bg-indigo-900 p-2 text-white' : ``
 					}`}

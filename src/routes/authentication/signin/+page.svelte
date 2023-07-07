@@ -21,7 +21,7 @@
 
 <Toaster />
 <form
-	class="h-screen md:w-1/2"
+	class="h-full md:w-1/2"
 	method="POST"
 	action="?/signin"
 	use:enhance={() => {
@@ -31,7 +31,7 @@
 		};
 	}}
 >
-	<div class="h-screen w-full bg-indigo-300 p-28 md:py-5">
+	<div class="h-full w-full bg-indigo-300 p-28 md:py-5">
 		<div class="mx-1 my-8 text-left text-white">
 			<h1 class="text-3xl">Sign-In to get started!</h1>
 		</div>
